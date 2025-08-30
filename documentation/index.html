@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+      />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+      <link rel="stylesheet" href="dist/css/style.css" />
+      <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+      <title>Homelist - Documentation</title>
+   </head>
+   <body>
+      <!-- navbar started -->
+      <nav
+         class="fixed top-0 z-50 w-full border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800"
+      >
+         <div class="my-px-60 container max-w-[1910px] py-3">
+            <div class="flex items-center justify-between">
+               <div class="flex items-center justify-start rtl:justify-end">
+                  <button
+                     data-drawer-target="logo-sidebar"
+                     data-drawer-toggle="logo-sidebar"
+                     aria-controls="logo-sidebar"
+                     type="button"
+                     class="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden"
+                  >
+                     <span class="sr-only">Open sidebar</span>
+                     <svg
+                        class="h-6 w-6"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           clip-rule="evenodd"
+                           fill-rule="evenodd"
+                           d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+                        ></path>
+                     </svg>
+                  </button>
+                  <a href="https://flowbite.com" class="ms-2 flex md:me-24">
+                     <img
+                        src="assets/logo.png"
+                        class="me-3 h-8"
+                        alt="Namespace It logo"
+                     />
+                  </a>
+               </div>
+               <div class="flex items-center">
+                  <div
+                     class="flex items-center gap-x-2 sm:gap-x-2.5 md:gap-x-3 lg:gap-x-5"
+                  >
+                     <a
+                        href="https://themeforest.net/user/namespace-it"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        role="button"
+                        class="rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+                     >
+                        <i class="fa-solid fa-shop"></i>
+                        <span class="hidden md:inline-block">Our Store</span>
+                     </a>
+                     <a
+                        href="https://themeforest.net/user/namespace-it/portfolio"
+                        target="_blank"
+                        role="button"
+                        class="rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+                     >
+                        <span class="hidden md:inline-block"
+                           >Buy More Templates</span
+                        >
+                        <span class="md:hidden">More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- navbar ended -->
+
+      <!-- left side started -->
+      <aside
+         id="logo-sidebar"
+         class="fixed left-0 top-0 z-40 h-screen w-80 -translate-x-full border-r border-gray-200 bg-white pt-20 transition-transform dark:border-gray-700 dark:bg-gray-800 lg:translate-x-0"
+         aria-label="Sidebar"
+      >
+         <div
+            class="h-full overflow-y-auto bg-white px-3 pb-4 dark:bg-gray-800"
+         >
+            <ul class="space-y-2 font-medium">
+               <li class="mb-5">
+                  <h5
+                     id="sidebar-heading-0"
+                     class="text-base font-semibold uppercase text-gray-500 dark:text-gray-400"
+                  >
+                     Documentation
+                  </h5>
+               </li>
+
+               <li>
+                  <a
+                     href="#getting-started"
+                     class="scroll-active group flex items-center bg-sky-50 p-2 py-3 text-gray-900 transition-all duration-300 hover:bg-sky-50/70 hover:text-primary dark:text-white dark:hover:bg-gray-700"
+                  >
+                     <i class="fad fa-star-shooting"></i>
+                     <span class="ms-3 flex-1 whitespace-nowrap"
+                        >Getting Started</span
+                     >
+                  </a>
+               </li>
+
+               <li>
+                  <a
+                     href="#features"
+                     class="group flex items-center bg-sky-50 p-2 py-3 text-gray-900 transition-all duration-300 hover:bg-sky-50/70 hover:text-primary dark:text-white dark:hover:bg-gray-700"
+                  >
+                     <i class="fa-sharp fa-solid fa-feather-pointed"></i>
+                     <span class="ms-3 flex-1 whitespace-nowrap">Features</span>
+                  </a>
+               </li>
+
+               <li>
+                  <a
+                     href="#folder-structure"
+                     class="group flex items-center bg-sky-50 p-2 py-3 text-gray-900 transition-all duration-300 hover:bg-sky-50/70 hover:text-primary dark:text-white dark:hover:bg-gray-700"
+                  >
+                     <i class="fa-solid fa-folder-open"></i>
+                     <span class="ms-3 flex-1 whitespace-nowrap"
+                        >Folder Structure</span
+                     >
+                  </a>
+               </li>
+
+               <li id="installation-button">
+                  <a
+                     href="#installation"
+                     role="button"
+                     class="group flex w-full items-center bg-sky-50 p-2 py-3 text-gray-900 transition-all duration-300 hover:bg-sky-50/70 hover:text-primary dark:text-white dark:hover:bg-gray-700"
+                  >
+                     <i class="fa-regular fa-screwdriver-wrench"></i>
+                     <span
+                        class="ms-3 flex-1 whitespace-nowrap text-left rtl:text-right"
+                        >Installation</span
+                     >
+                  </a>
+               </li>
+               <li>
+                  <a
+                     href="#support"
+                     class="group flex items-center bg-sky-50 p-2 py-3 text-gray-900 transition-all duration-300 hover:bg-sky-50/70 hover:text-primary dark:text-white dark:hover:bg-gray-700"
+                  >
+                     <i class="fa-duotone fa-solid fa-suitcase-medical"></i>
+                     <span class="ms-3 flex-1 whitespace-nowrap">Support</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </aside>
+      <!-- left side ended -->
+
+      <div class="mt-14 flex flex-1 gap-x-5 p-4 lg:ml-80">
+         <div class="flex-1 space-y-5 rounded-lg">
+            <!-- main content here -->
+            <!-- getting started -->
+            <section
+               id="getting-started"
+               class="content container max-w-screen-md rounded-lg p-10 pt-16 shadow-lg"
+            >
+               <article
+                  class="prose !max-w-full flex-1 transition-all prose-a:text-primary-400 hover:prose-a:no-underline prose-img:rounded-lg"
+               >
+                  <div
+                     class="mb-4 flex items-center gap-x-5 md:mb-7 lg:mb-10 xl:mb-12"
+                  >
+                     <div class="mx-auto flex size-fit items-center">
+                        <img
+                           src="assets/logo.png"
+                           alt="Namespace IT"
+                           class="h-10 w-auto"
+                        />
+                        <span class="text-lg font-bold text-slate-500"
+                           >| Docs</span
+                        >
+                     </div>
+                  </div>
+
+                  <h1>Getting Started</h1>
+
+                  <p class="lead">
+                     <strong>Fixton</strong> - Crafting Confidence in Repair and
+                     Maintenance Next.js Template.
+                  </p>
+
+                  <p class="lead">
+                     Welcome to <strong>Fixton</strong>, a <i>responsive</i>,
+                     <i>mobile-friendly</i> <i>NextJS 14+</i>,
+                     <i>ReactJS 18+</i> and <i>TypeScript 5+</i> template
+                     powered by
+                     <a
+                        href="https://tailwindcss.com"
+                        target="_blank"
+                        referrerpolicy="no-referrer noopner"
+                        rel="nofollow"
+                        >Tailwind CSS</a
+                     >
+                     and <a href="https://ui.shadcn.com/">Shadcn UI</a>.
+                     <strong>Fixton</strong> is designed for smooth
+                     <i>SEO</i> optimization, ensuring that your website works
+                     well on <i>all devices</i>.
+                  </p>
+
+                  <img src="assets/fixton-cover.jpg" alt="Fixton" />
+
+                  <div
+                     class="mb-4 flex items-center rounded-lg bg-blue-50 p-4 text-sm text-blue-800 dark:bg-gray-800 dark:text-blue-400"
+                     role="alert"
+                  >
+                     <i
+                        class="fas fa-hands-heart me-3 inline h-4 w-4 flex-shrink-0"
+                     ></i>
+                     <span class="sr-only">Info</span>
+                     <div>
+                        <span class="font-medium">Thank You!</span> We'd like to
+                        thank you for picking our <i>Fixton</i> template.
+                     </div>
+                  </div>
+
+                  <p>
+                     Introducing our cutting-edge
+                     <strong>car repair</strong> template, designed with the
+                     latest tech for a smooth user experience. Fully responsive
+                     and optimized for all devices, this template uses NextJs
+                     14+ with App Routing, ReactJs 18+, and ShadcnUI for
+                     eye-catching UI components.
+                  </p>
+                  <p>
+                     TailwindCSS ensures it looks great, while React Icons and
+                     carousels add extra functionality. Built with TypeScript
+                     5+, EsLint, and Prettier, the code is clean,
+                     well-commented, and simple to customize. With SEO best
+                     practices in mind, this template is perfect for modern web
+                     applications, offering a solid and user-friendly foundation
+                     for car repair services.
+                  </p>
+
+                  <h2>Use Cases</h2>
+                  <ul>
+                     <li>
+                        <strong> Car Repair Shop </strong>
+                        : You can use the template for car repair shops.
+                     </li>
+                     <li>
+                        <strong> Car Service Center </strong>
+                        : You can use the template for car service centers.
+                     </li>
+                     <li>
+                        <strong> Car Maintenance </strong>
+                        : You can use the template for car maintenance websites.
+                     </li>
+
+                     <li>
+                        <strong> Car Wash </strong>
+                        : You can use the template for car wash websites.
+                     </li>
+                     <li>
+                        <strong> Car Detailing </strong>
+                        : You can use the template for car detailing websites.
+                     </li>
+
+                     <li>
+                        <strong> Car Painting </strong>
+                        : You can use the template for car painting websites.
+                     </li>
+                  </ul>
+
+                  <h2>Where We Can Use It?</h2>
+                  <p>
+                     Where you can use this template? Here are some examples:
+                  </p>
+                  <ol>
+                     <li>
+                        <strong>Static Site: </strong>
+                        You can use the template as a static site with just
+                        HTML, CSS & JavaScript.
+                     </li>
+                     <li>
+                        <strong>Dynamic Site: </strong>
+                        You can use the template in <i>PHP</i>, <i>NodeJs</i> or
+                        any other server-side language.
+                     </li>
+                     <li>
+                        <strong>ReactJs: </strong>
+                        Your can use the template in <i>ReactJs</i>,
+                        <i>NextJs</i>, <i>GatsbyJs</i>, etc. <i>TypeScript</i> &
+                        <i>JavaScript</i> both are supported.
+                     </li>
+                  </ol>
+               </article>
+            </section>
+
+            <!-- Features started -->
+            <section
+               id="features"
+               class="content container max-w-screen-md rounded-lg p-10 pt-16 shadow-lg"
+            >
+               <article
+                  class="prose !max-w-full flex-1 transition-all prose-a:text-primary-400 hover:prose-a:no-underline prose-img:rounded-lg"
+               >
+                  <h1>Features of <strong>Fixton</strong> Template</h1>
+                  <p class="lead">
+                     <strong>Fixton</strong> - Here are some of the features of
+                     the template.
+                  </p>
+
+                  <ul>
+                     <li><strong>NextJs 14+</strong> App Routing</li>
+                     <li><strong>ReactJs 18+</strong></li>
+                     <li>
+                        <strong>ShadcnUI</strong> - Beautifully Designed UI
+                        Components Library
+                     </li>
+                     <li>
+                        <strong>TailwindCSS</strong> - Utility First CSS
+                        Framework
+                     </li>
+                     <li>React Icons</li>
+                     <li>
+                        <strong>Server Components</strong>
+                     </li>
+                     <li>Carousel Slider</li>
+                     <li>TypeScript 5+</li>
+                     <li>Eslint</li>
+                     <li>Prettier</li>
+                     <li><strong>100% Responsive</strong> all devices</li>
+                     <li>
+                        <strong>SEO Friendly</strong> - Search Engine Optimized
+                     </li>
+                     <li>
+                        Easy to <strong>Customize</strong> - Well Commented Code
+                     </li>
+                     <li>
+                        Well <strong>Documented</strong> - Step by Step Guide
+                     </li>
+                     <li>Multipages</li>
+                     <li>3 Homepages</li>
+                     <li>15 Pages</li>
+                     <li>
+                        Performance Optimized -
+                        <strong>Google Lighthouse</strong>
+                     </li>
+                     <li><strong>TSX</strong> - TypeScript React Components</li>
+                     <li>
+                        Modern <strong>Design</strong> - Beautifully Crafted
+                     </li>
+                     <li>
+                        Nice scroll animations -
+                        <strong>Framer Motion</strong> Library
+                     </li>
+                     <li>Light weight</li>
+                     <li>Fast Loading</li>
+                     <li>Google fonts</li>
+                     <li>
+                        <strong> Full source code </strong>
+                     </li>
+                     <li>Life time updates</li>
+                     <li>Life time supports</li>
+                  </ul>
+                  <h2>Pages</h2>
+                  <p>
+                     The <strong>Fixton</strong> template comes with 15 pages
+                     that you can use to create your website.
+                  </p>
+                  <ol>
+                     <li>3 Homepages</li>
+                     <li>About</li>
+                     <li>Services</li>
+                     <li>Service Details</li>
+                     <li>Teams</li>
+                     <li>Projects</li>
+                     <li>Project Details</li>
+                     <li>Prices</li>
+                     <li>FAQs</li>
+                     <li>Blogs</li>
+                     <li>Blog Details</li>
+                     <li>Contact</li>
+                     <li>4o4 not found</li>
+                  </ol>
+
+                  <h2>Credits</h2>
+                  <p>
+                     We'd like to thank the following resources for providing
+                     the tools and resources that we used to create this
+                     template.
+                  </p>
+                  <ul>
+                     <li>
+                        <a
+                           href="https://nextjs.org"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           NextJs
+                        </a>
+                        : The React Framework for the Web.
+                     </li>
+                     <li>
+                        <a
+                           href="https://tailwindcss.com"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Tailwind CSS</a
+                        >
+                        : A utility-first CSS framework for rapidly building.
+                     </li>
+                     <li>
+                        <a
+                           href="https://ui.shadcn.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Shadcn UI</a
+                        >
+                        : Beautifully Designed UI Components Library.
+                     </li>
+                     <li>
+                        <a
+                           href="https://react-icons.github.io/react-icons/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           React Icons
+                        </a>
+                        : Include popular icons in your React projects easily
+                     </li>
+
+                     <li>
+                        <a
+                           href="https://github.hubspot.com/odometer/docs/welcome/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Framer Motion</a
+                        >
+                        : Complete documentation of the Framer Motion animation
+                        library.
+                     </li>
+                  </ul>
+               </article>
+            </section>
+
+            <!-- folder structure -->
+            <section
+               id="folder-structure"
+               class="content container max-w-screen-md rounded-lg p-10 pt-16 shadow-lg"
+            >
+               <article
+                  class="prose !max-w-full flex-1 transition-all prose-a:text-primary-400 hover:prose-a:no-underline prose-img:rounded-lg"
+               >
+                  <h1>Folder Structure</h1>
+                  <p class="lead">
+                     The <strong>Fixton</strong> template has various files and
+                     folders you can easily customize. You can change the logo,
+                     title, styles, colors, and TypeScript, or add new pages as
+                     needed.
+                  </p>
+                  <figure>
+                     <img
+                        src="assets/folder-structure.png"
+                        alt="Namespace IT"
+                     />
+                  </figure>
+
+                  <h2>Let's discuss about folders and files.</h2>
+
+                  <h3>Page and Layouts</h3>
+                  <p>All the pages inside <code>/src/app</code> folders</p>
+                  <img src="assets/folders/page-routing.png" alt="Fixton" />
+
+                  <h3>Components</h3>
+                  <p>
+                     All the reuseable components inside
+                     <code>/src/components</code>
+                  </p>
+                  <img src="assets/folders/components.png" alt="Fixton" />
+
+                  <h3>Hooks</h3>
+                  <p>
+                     All the custom hooks inside <code>/src/hooks</code> folders
+                  </p>
+                  <img src="assets/folders/hooks.png" alt="Fixton" />
+
+                  <h3>Mock Data</h3>
+                  <p>
+                     All the mock data inside
+                     <code>/src/lib/mock-data.ts</code> file. The
+                     <code>/utils.ts</code> file contains the utility functions.
+                  </p>
+                  <img
+                     src="assets/folders/static-data-library.png"
+                     alt="Fixton"
+                  />
+
+                  <h3>Middleware</h3>
+                  <p>
+                     All the middleware functions inside
+                     <code>/src/middleware.ts</code> file
+                  </p>
+                  <img src="assets/folders/middleware.png" alt="Fixton" />
+
+                  <h3>components.json file</h3>
+                  <p>
+                     Configuration of shadcn/ui - Beautifully designed
+                     components that you can copy and paste into your apps.
+                  </p>
+                  <img src="assets/folders/components-json.png" alt="Fixton" />
+
+                  <h3>tailwind.config.js:</h3>
+                  <p>
+                     The <code>tailwind.config.js</code> file holds the
+                     <i>TailwindCSS</i> settings for the template. You can
+                     customize it as needed. It&apos;s included in the template
+                     but doesn&apos;t need to be uploaded to the server unless
+                     you want to modify <i>TailwindCSS</i> classes.
+                  </p>
+                  <img
+                     src="assets/folders/tailwind-css-config.png"
+                     alt="Fixton"
+                  />
+
+                  <h3>tsconfig.ts:</h3>
+                  <p>
+                     The <code>/tsconfig.ts</code> file holds the TypeScript
+                     settings for the template. You can customize it if needed.
+                     It&apos;s included but doesn&apos;t need to be uploaded to
+                     the server and can be deleted if you&apos;re not using
+                     TypeScript.
+                  </p>
+                  <img src="assets/folders/tsconfig.png" alt="Fixton" />
+               </article>
+            </section>
+
+            <!-- Installation structure -->
+            <section
+               id="installation"
+               class="content container max-w-screen-md rounded-lg p-10 pt-16 shadow-lg"
+            >
+               <article
+                  class="prose !max-w-full flex-1 transition-all prose-a:text-primary-400 hover:prose-a:no-underline prose-img:rounded-lg"
+               >
+                  <h1>Installation</h1>
+                  <p class="lead">
+                     To install the <strong>Fixton</strong> template, follow the
+                     steps below. The template use <strong>NextJs 14+</strong>,
+                     so make sure you have installed NodeJs 18+. Please follow
+                     the NextJs installation guide.
+                  </p>
+
+                  <h3>Install dependencies</h3>
+                  <pre><code class="language-bash"># Install dependencies using npm
+npm install
+# using bunjs
+bun Install
+# using yarn
+yarn install
+# using pnpm
+pnpm install</code></pre>
+
+                  <h3>Run Development Server</h3>
+                  <pre><code class="language-bash"># Run development server
+# using npm
+npm run dev
+# using bunjs
+bun run dev
+# using yarn
+yarn dev
+# using pnpm
+pnpm run dev</code></pre>
+
+                  <h3>Make Production Build</h3>
+                  <pre><code class="language-bash"># Run production build
+# using npm
+npm run build
+# using bunjs
+bun --bun run build
+# using yarn
+yarn build
+# using pnpm
+pnpm build</code></pre>
+
+                  <h3>Run Production Server</h3>
+
+                  <pre><code class="language-bash"># Run development server
+# using npm
+npm start
+# using bunjs
+bun start
+# using yarn
+yarn start
+# using pnpm
+pnpm start</code></pre>
+
+                  <div
+                     class="mb-4 rounded-lg bg-blue-50 p-4 text-sm text-blue-800 dark:bg-gray-800 dark:text-blue-400"
+                     role="alert"
+                  >
+                     <span class="font-medium">Production Server</span>
+                     Development server runs on port 3000. The development
+                     server only for development. Do not use it on production.
+                     For production, you need to build the project and run the
+                     production server.
+                  </div>
+               </article>
+            </section>
+
+            <!-- support structure -->
+            <section
+               id="support"
+               class="content container h-screen max-w-screen-md rounded-lg p-10 pt-16 shadow-lg"
+            >
+               <article
+                  class="prose !max-w-full flex-1 transition-all prose-a:text-primary-400 hover:prose-a:no-underline prose-img:rounded-lg"
+               >
+                  <h1 id="support">Support</h1>
+                  <p class="lead">
+                     Need help, have a question, or just want to say hi? We're
+                     here to help you.
+                  </p>
+                  <div class="not-prose flex flex-wrap items-center gap-2">
+                     <a
+                        href="https://www.facebook.com/namespaceitcom"
+                        target="_blank"
+                        referrerpolicy="no-referrer"
+                        role="button"
+                        class="mb-2 me-2 inline-flex items-center rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white no-underline transition-colors hover:bg-gradient-to-bl focus:outline-none"
+                     >
+                        <i class="fa-solid fa-shop"></i>
+                        <span class="ml-2">Our Store</span>
+                     </a>
+                     <a
+                        href="https://www.facebook.com/namespaceitcom"
+                        target="_blank"
+                        referrerpolicy="no-referrer"
+                        role="button"
+                        class="mb-2 me-2 inline-flex items-center rounded-lg bg-[#3b5998] px-5 py-2.5 text-center text-sm font-medium text-white no-underline hover:bg-[#3b5998]/90 focus:outline-none"
+                     >
+                        <svg
+                           class="me-2 h-4 w-4"
+                           aria-hidden="true"
+                           xmlns="http://www.w3.org/2000/svg"
+                           fill="currentColor"
+                           viewBox="0 0 8 19"
+                        >
+                           <path
+                              fill-rule="evenodd"
+                              d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                              clip-rule="evenodd"
+                           />
+                        </svg>
+                        <span>Contact with Facebook</span>
+                     </a>
+
+                     <a
+                        href="https://www.namespaceit.com"
+                        target="_blank"
+                        referrerpolicy="no-referrer"
+                        role="button"
+                        class="mb-2 me-2 inline-flex items-center rounded-lg bg-[#f74707] px-5 py-2.5 text-center text-sm font-medium text-white no-underline hover:bg-[#f74707]/90 focus:outline-none"
+                     >
+                        <i class="fas fa-globe-europe"></i>
+                        <span class="ml-2">Official Website</span>
+                     </a>
+
+                     <a
+                        href="mailto:info@namespaceit.com"
+                        referrerpolicy="no-referrer"
+                        role="button"
+                        class="mb-2 me-2 inline-flex items-center rounded-lg bg-slate-500 px-5 py-2.5 text-center text-sm font-medium text-white no-underline hover:bg-slate-500/90 focus:outline-none"
+                     >
+                        <i class="fad fa-paper-plane"></i>
+                        <span class="ml-2">Mail to Us</span>
+                     </a>
+                  </div>
+
+                  <p><strong>Contact: </strong> info@namespaceit.com</p>
+               </article>
+            </section>
+            <!-- main content end -->
+         </div>
+         <div class="hidden w-72 transition-transform xl:block">
+            <div
+               id="dropdown-cta"
+               class="mt-6 rounded-lg bg-blue-50 p-4 dark:bg-blue-900"
+               role="alert"
+            >
+               <div class="mb-3 flex items-center">
+                  <span
+                     class="me-2 rounded bg-orange-100 px-2.5 py-0.5 text-sm font-semibold text-orange-800 dark:bg-orange-200 dark:text-orange-900"
+                     >Notice</span
+                  >
+                  <button
+                     type="button"
+                     class="-mx-1.5 -my-1.5 ms-auto inline-flex h-6 w-6 items-center justify-center rounded-lg bg-blue-50 p-1 text-blue-900 hover:bg-blue-200 focus:ring-2 focus:ring-blue-400 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800"
+                     data-dismiss-target="#dropdown-cta"
+                     aria-label="Close"
+                  >
+                     <span class="sr-only">Close</span>
+                     <svg
+                        class="h-2.5 w-2.5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 14"
+                     >
+                        <path
+                           stroke="currentColor"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="2"
+                           d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                        />
+                     </svg>
+                  </button>
+               </div>
+               <p class="mb-3 text-sm text-blue-800 dark:text-blue-400">
+                  We always try to provide the best support to our customers. If
+                  you have any questions, need help, or just want to say hi,
+                  please feel free to contact us.
+               </p>
+               <a
+                  class="text-sm font-medium text-blue-800 underline hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300"
+                  href="#support"
+                  >Contact Us</a
+               >
+            </div>
+         </div>
+      </div>
+
+      <!-- scripts -->
+      <script src="dist/js/all.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+      <script src="dist/js/index.js"></script>
+      <script>
+         hljs.highlightAll();
+      </script>
+   </body>
+</html>
